@@ -1,6 +1,18 @@
 import Link from "next/link";
 
 export default function id() {
+  const curriculo = {
+    nome: "Felipe  Maximiliano Alves Schmidt",
+    cargoDesejado: "Manutenção e reparação de softwares",
+    email: "f.m.a.schmidt@email.com",
+    telefone: "(11) 98765-4321",
+    cpf: "123.456.789-00",
+    resumo: "Estudante do terceiro ano do cedup, com experiencia em aula em resolução de trabalhos projetos e atividades coordenadas pelo professor de informática, com conhecimento em HTML, CSS, JavaScript, React, Next.js, Node.js e Express. Buscando oportunidades para aplicar habilidades técnicas e contribuir para projetos inovadores.",
+    experiencias: "Desenvolvedor amador ainda em formação tecnica(2024-2026): Desenvolvimento de aplicações em React e Node.js, integração de APIs REST e otimização de performance.\n\nDesenvolvedor Front-end  - : Desenvolvimento de interfaces responsivas com JavaScript e CSS.",
+    formacoes: "Curso técnico em informática para internet - CEDUP (2024-2026): Foco em desenvolvimento web, incluindo HTML, CSS, JavaScript e frameworks modernos como React e Next.js.",
+    habilidades: "JavaScript, TypeScript, React, Next.js, Node.js, Express e Git,"
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <header className="border-b border-slate-200 bg-white shadow-sm">
@@ -30,22 +42,22 @@ export default function id() {
       <section className="mx-auto grid max-w-7xl gap-10 px-6 py-10 lg:grid-cols-[1.25fr_0.75fr]">
         <div className="space-y-6 rounded-[2rem] bg-white p-8 shadow-sm">
           <span className="inline-flex rounded-full bg-cyan-100 px-4 py-2 text-sm font-semibold text-cyan-700">
-            Formulário de cadastro pessoal
+            Visualização do currículo
           </span>
           <div className="space-y-4">
-            <h2 className="text-4xl font-semibold tracking-tight text-slate-900">Organize seu perfil profissional</h2>
+            <h2 className="text-4xl font-semibold tracking-tight text-slate-900">Seu perfil profissional</h2>
             <p className="max-w-3xl text-lg leading-8 text-slate-600">
-              Um formulário completo para coletar informações pessoais, dados de contato, histórico profissional e habilidades. Design responsivo e fácil de usar em qualquer tela.
+              Visualização completa do seu perfil profissional com informações pessoais, contato, histórico profissional, formação acadêmica e habilidades.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <h3 className="text-xl font-semibold text-slate-900">Contato</h3>
-              <p className="mt-2 text-slate-600">Campos essenciais para contato e identificação.</p>
+              <p className="mt-2 text-slate-600">Seus dados de contato e identificação.</p>
             </div>
             <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
               <h3 className="text-xl font-semibold text-slate-900">Experiência</h3>
-              <p className="mt-2 text-slate-600">Seções para destacar seu histórico profissional e educacional.</p>
+              <p className="mt-2 text-slate-600">Seu histórico profissional e educacional.</p>
             </div>
           </div>
         </div>
@@ -67,107 +79,89 @@ export default function id() {
         <section id="formulario" className="rounded-[2rem] bg-white p-8 shadow-sm">
           <div className="mb-8 flex flex-col gap-4 rounded-[1.5rem] bg-slate-50 p-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-cyan-600">Cadastro</p>
-              <h2 className="mt-3 text-3xl font-semibold text-slate-900">Formulário pessoal</h2>
+              <p className="text-sm uppercase tracking-[0.3em] text-cyan-600">Currículo</p>
+              <h2 className="mt-3 text-3xl font-semibold text-slate-900">Dados profissionais</h2>
             </div>
             <span className="rounded-full bg-cyan-600 px-4 py-2 text-sm font-semibold text-white">
-              Campos obrigatórios incluídos
+              Visualização
             </span>
           </div>
 
           <form className="grid gap-8">
             <div className="grid gap-6 lg:grid-cols-2">
-              <label className="space-y-2">
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">Nome</span>
-                <input
-                  type="text"
-                  placeholder="Digite seu nome completo"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
-              <label className="space-y-2">
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900">
+                  {curriculo.nome}
+                </div>
+              </div>
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">Cargo desejado</span>
-                <input
-                  type="text"
-                  placeholder="Ex: Desenvolvedor Front-end"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900">
+                  {curriculo.cargoDesejado}
+                </div>
+              </div>
             </div>
 
             <div className="grid gap-6 lg:grid-cols-3">
-              <label className="space-y-2">
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">E-mail</span>
-                <input
-                  type="email"
-                  placeholder="exemplo@dominio.com"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
-              <label className="space-y-2">
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900">
+                  {curriculo.email}
+                </div>
+              </div>
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">Telefone</span>
-                <input
-                  type="tel"
-                  placeholder="(11) 99999-9999"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
-              <label className="space-y-2">
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900">
+                  {curriculo.telefone}
+                </div>
+              </div>
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">CPF</span>
-                <input
-                  type="text"
-                  placeholder="000.000.000-00"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900">
+                  {curriculo.cpf}
+                </div>
+              </div>
             </div>
 
             <div className="grid gap-6">
-              <label className="space-y-2">
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">Resumo profissional</span>
-                <textarea
-                  rows={4}
-                  placeholder="Descreva seu perfil e objetivos em poucas linhas"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 whitespace-pre-wrap">
+                  {curriculo.resumo}
+                </div>
+              </div>
             </div>
 
             <div className="grid gap-6 lg:grid-cols-2">
-              <label className="space-y-2">
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">Experiências profissionais</span>
-                <textarea
-                  rows={5}
-                  placeholder="Liste cargos, empresas e responsabilidades"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
-              <label className="space-y-2">
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 whitespace-pre-wrap">
+                  {curriculo.experiencias}
+                </div>
+              </div>
+              <div className="space-y-2">
                 <span className="text-sm font-semibold text-slate-700">Formações acadêmicas</span>
-                <textarea
-                  rows={5}
-                  placeholder="Informe cursos, instituições e períodos"
-                  className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-                />
-              </label>
+                <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 whitespace-pre-wrap">
+                  {curriculo.formacoes}
+                </div>
+              </div>
             </div>
 
-            <label className="space-y-2">
+            <div className="space-y-2">
               <span className="text-sm font-semibold text-slate-700">Habilidades</span>
-              <textarea
-                rows={3}
-                placeholder="Liste suas principais habilidades separadas por vírgula"
-                className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900 outline-none transition focus:border-cyan-500 focus:ring-2 focus:ring-cyan-100"
-              />
-            </label>
+              <div className="w-full rounded-3xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-900">
+                {curriculo.habilidades}
+              </div>
+            </div>
 
             <div className="flex flex-col gap-4 rounded-[1.75rem] bg-slate-50 px-6 py-6 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="text-sm text-slate-600">Um design baseado em flexbox e grid organizado por seções.</p>
+                <p className="text-sm text-slate-600">Visualização completa do perfil profissional.</p>
               </div>
-              <button className="rounded-full bg-cyan-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-cyan-500">
-                Enviar Cadastro
-              </button>
+              <Link href="/curriculos" className="rounded-full bg-cyan-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-cyan-500">
+                Voltar
+              </Link>
             </div>
           </form>
         </section>
