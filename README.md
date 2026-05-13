@@ -1,36 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Durante o periodo de desenvolvimento(4 Aulas) nos ultimos dias,o projeto se iniciou com a instalação da biblioteca tailwind e de comandos do github após isso foi feita a criação separacão dos arquivo seguindo as diretrizes de cada componente(Home (/): Landing page apresentando os benefícios do sistema. Aplicar os recursos
+de UI do shadcn para a landing page.
+2. Lista de Currículos (/sistema/paginas/curriculos): Exibição de cards com
+resumos (Nome, Cargo, Resumo profissional).
+3. Detalhes do Currículo (/sistema/paginas/curriculos/[id]): Rota dinâmica
+que exibe todas as informações do candidato e as ações de gestão.
+4. Cadastro (/sistema/paginas/curriculos/novo): Formulário completo para
+inserção de novos dados. OBS: Fazer upload fake de imagem.) após a criação dos principais arquivios e da pasta principal se utilizando do comando npx create next-app,
+foi iniciado o processo de desenvolvimento da arquitetura e estrutura do site utilizando tawilwind,Next.js (App Router),Tailwind CSS (foco em responsividade),shadcn/ui (componentes de interface),React Hook Form e Yup (validação de esquemas),React Input Mask Next.Sonner (notificações toast) e React Icon.Após a finalização do desenvolvimento principal,foi finalizado os últimos detalhes e acabamentos do projeto assim culiminando na estrutura completa e finalizada do projeto e os testes do quão competente o site estava funcionando
