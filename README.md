@@ -1,9 +1,26 @@
-Durante o periodo de desenvolvimento(4 Aulas) nos ultimos dias,o projeto se iniciou com a instalação da biblioteca tailwind e de comandos do github após isso foi feita a criação separacão dos arquivo seguindo as diretrizes de cada componente(Home (/): Landing page apresentando os benefícios do sistema. Aplicar os recursos
-de UI do shadcn para a landing page.
-2. Lista de Currículos (/sistema/paginas/curriculos): Exibição de cards com
-resumos (Nome, Cargo, Resumo profissional).
-3. Detalhes do Currículo (/sistema/paginas/curriculos/[id]): Rota dinâmica
-que exibe todas as informações do candidato e as ações de gestão.
-4. Cadastro (/sistema/paginas/curriculos/novo): Formulário completo para
-inserção de novos dados. OBS: Fazer upload fake de imagem.) após a criação dos principais arquivios e da pasta principal se utilizando do comando npx create next-app,
-foi iniciado o processo de desenvolvimento da arquitetura e estrutura do site utilizando tawilwind,Next.js (App Router),Tailwind CSS (foco em responsividade),shadcn/ui (componentes de interface),React Hook Form e Yup (validação de esquemas),React Input Mask Next.Sonner (notificações toast) e React Icon.Após a finalização do desenvolvimento principal,foi finalizado os últimos detalhes e acabamentos do projeto assim culiminando na estrutura completa e finalizada do projeto e os testes do quão competente o site estava funcionando
+1. Estruturação e Arquitetura
+A base do projeto foi estabelecida através do comando npx create-next-app, utilizando o Next.js (App Router) como framework principal. A arquitetura foi organizada seguindo as diretrizes de componentização para garantir a escalabilidade e a manutenção do código. O roteamento foi definido da seguinte forma:
+
+Home (/): Uma Landing Page projetada para apresentar os benefícios do sistema, utilizando recursos avançados de UI do shadcn/ui para uma interface moderna.
+
+Lista de Currículos (/sistema/paginas/curriculos): Uma visualização em grade (grid) composta por cards que sintetizam as informações essenciais do candidato, como nome, cargo e resumo profissional.
+
+Detalhes do Currículo (/sistema/paginas/curriculos/[id]): Implementação de uma rota dinâmica que recupera e exibe as informações detalhadas de cada perfil, além de centralizar as ações de gestão.
+
+Cadastro (/sistema/paginas/curriculos/novo): Um formulário robusto para a inserção de novos dados, incluindo uma funcionalidade de upload simulado de imagem.
+
+2. Tecnologias e Implementação
+Para garantir uma experiência de usuário fluida e um design responsivo, foram integradas tecnologias de ponta:
+
+Tailwind CSS: Utilizado como motor de estilização, com foco total em adaptabilidade para diferentes tamanhos de tela.
+
+shadcn/ui & React Icons: Bibliotecas escolhidas para compor a interface com componentes visuais consistentes e intuitivos.
+
+React Hook Form & Yup: Implementados para gerenciar o estado dos formulários e garantir a validação rigorosa dos dados inseridos.
+
+React Input Mask: Aplicado para padronizar a entrada de dados sensíveis (como CPFs ou telefones).
+
+Next.Sonner: Sistema de notificações tipo toast para fornecer feedback imediato ao usuário sobre suas ações.
+
+3. Finalização e Testes
+Após o desenvolvimento das funcionalidades principais, a etapa final concentrou-se no refinamento estético e nos ajustes de acabamento. Foram realizados testes de usabilidade e performance para assegurar que a estrutura estivesse operando plenamente. O resultado final é um sistema coeso, com uma arquitetura sólida e pronto para atender às demandas de gestão de currículos com eficiência e competência técnica.
